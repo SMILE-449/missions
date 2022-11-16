@@ -5,7 +5,7 @@ var objPeople = [
     },
     {
         login: "admin",
-        password: "elytroo"
+        password: "SMILE-449"
     }
 ]
 
