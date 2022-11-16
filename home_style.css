@@ -1,0 +1,105 @@
+:root {
+    --transition-duration: 0.5s;
+    --box-shadow: -5px -5px 15px #6640a3, 5px 5px 15px #4073a3;
+    --box-reverse-shadow: -5px -5px 15px #4073a3, 5px 5px 15px #6640a3;
+}
+
+body {
+    margin: 0;
+    background: #191b30;
+    font-family: Arial, sans-serif;
+}
+
+
+.container:not(:hover) {
+    transition: var(--transition-duration);
+    position: absolute;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 868px;
+    background: #2e3157;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: var(--box-shadow);
+    border: 3px solid #6640a3;
+}
+
+.container:hover {
+    transition: var(--transition-duration);
+    position: absolute;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 868px;
+    background: #2e3157;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: var(--box-reverse-shadow);
+    border: 5px solid #6640a3;
+    padding: 10px;
+}
+
+.misja6,
+.misja5,
+.misja4,
+.misja3,
+.misja2,
+.misja1 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.Misja3:not(:hover),
+.Misja2:not(:hover),
+.Misja1:not(:hover){
+    transition: var(--transition-duration);
+    background-color: #5e0edf;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 750;
+    width: 233px;
+    padding-top: 185px;
+    padding-bottom: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px solid #6640a3;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin: 33%;
+}
+
+
+.misje-title {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.Misja3:hover,
+.Misja2:hover,
+.Misja1:hover{
+    transition: var(--transition-duration);
+    background-color: #66666642;
+    color: #6666662d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 750;
+    width: 243px;
+    padding-top: 195px;
+    padding-bottom: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px solid #6640a3;
+    box-shadow: var(--box-reverse-shadow);
+    cursor: pointer;
+    margin: 20px;
+}

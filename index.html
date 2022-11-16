@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SMILE-449</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-form">
+                <div class="login-title">
+                    Logowanie
+                </div>
+                <form action="home.html" onsubmit=" return getInfo()">
+                    <div class="login-input">
+                        <p class="login-input-info">Login</p>
+                        <input type="text" id="login"><br>
+                    </div>
+                    <div class="password-input">
+                        <p class="login-input-info">Hasło</p>
+                        <input type="password" id="password"><br>
+                    </div>
+                    <button type="submit" class="button" onclick="getInfo()">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="login.js"></script>
+</html>

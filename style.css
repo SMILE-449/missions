@@ -1,0 +1,111 @@
+:root {
+    --transition-duration: 0.5s;
+    --box-shadow: -5px -5px 15px #6640a3, 5px 5px 15px #4073a3;
+    --box-reverse-shadow: -5px -5px 15px #4073a3, 5px 5px 15px #6640a3;
+}
+
+body {
+    margin: 0;
+    background: #191b30;
+    font-family: Arial, sans-serif;
+}
+
+.container:not(:hover) {
+    transition: var(--transition-duration);
+    position: absolute;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 350px;
+    background: #2e3157;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: var(--box-shadow);
+    border: 3px solid #6640a3;
+}
+
+.container:hover {
+    transition: var(--transition-duration);
+    position: absolute;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 370px;
+    background: #2e3157;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: var(--box-reverse-shadow);
+    border: 3px solid #6640a3;
+}
+
+.login-form {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.login-title {
+    font-weight: 700;
+    font-size: 28px;
+    padding: 9px;
+}
+
+.login-input-info {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+input:not(:hover),
+input {
+    transition: var(--transition-duration);
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+    background: #4f3080;
+    border: 2px solid #6640a3;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: 0;
+    width: 85%;
+    height: 20px;
+    padding: 4px;
+    box-shadow: 1px 5px 5px black;
+    text-align: center;
+}
+
+.button:not(:hover) {
+    transition: var(--transition-duration);
+    color: white;
+    background: #4f3080;
+    border: 2px solid #6640a3;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 120px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 1px 5px 5px black;
+}
+
+.button:hover {
+    transition: var(--transition-duration);
+    color: white;
+    background: #6f44b4;
+    border: 1px solid #6640a3;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 120px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #8755d8;
+}
+
